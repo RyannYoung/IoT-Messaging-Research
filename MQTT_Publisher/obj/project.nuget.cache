@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3NhrmeDGkra/Jc2CfnM3npZhs+OTqpVMJSWJ21iGTnJ08m6b1ZG0Y9Q3C9j5mpPp0w0sdHsjm9c8CdxXqA57Gw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\MQTT_Publisher\\MQTT_Publisher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\mqttnet\\4.0.0-preview5\\mqttnet.4.0.0-preview5.nupkg.sha512",
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\spectre.console\\0.44.1-preview.0.13\\spectre.console.0.44.1-preview.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

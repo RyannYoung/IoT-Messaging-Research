@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AMQP_Client/1.0.0": {
+        "dependencies": {
+          "AMQPNetLite": "2.4.4"
+        },
+        "runtime": {
+          "AMQP_Client.dll": {}
+        }
+      },
+      "AMQPNetLite/2.4.4": {
+        "dependencies": {
+          "AMQPNetLite.Core": "2.4.4"
+        }
+      },
+      "AMQPNetLite.Core/2.4.4": {
+        "runtime": {
+          "lib/netstandard2.0/Amqp.Net.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.4.4.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AMQP_Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AMQPNetLite/2.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4n9ysjRv0GIipahOTmpssLKgaKBE8s4spQ4BdU4+VEp5kMnNoMfID5XNPRkx7tIh7dPgGfs3dvpE1KV0t2l8vQ==",
+      "path": "amqpnetlite/2.4.4",
+      "hashPath": "amqpnetlite.2.4.4.nupkg.sha512"
+    },
+    "AMQPNetLite.Core/2.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fjg9VYj83X9GwzK8EA9kJ+22uzH7XHuS6hJcNhOxgpX7SWjE7b9lqdiQV+ffiomdhdgQpNHlHVI7YuAXvM/JSQ==",
+      "path": "amqpnetlite.core/2.4.4",
+      "hashPath": "amqpnetlite.core.2.4.4.nupkg.sha512"
+    }
+  }
+}

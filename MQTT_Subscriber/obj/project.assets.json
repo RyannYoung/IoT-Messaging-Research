@@ -1,0 +1,141 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "MQTTnet/4.0.0-preview5": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MQTTnet.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MQTTnet.dll": {}
+        }
+      },
+      "Spectre.Console/0.44.1-preview.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Spectre.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MQTTnet/4.0.0-preview5": {
+      "sha512": "dWWjKDsjREzBei3eKlr23kvPNFDCRs1ejZDiLmYaDEqZCtxQyE8+cjZ8LO8Qjjv/YGyvepLTxBdmscvuBU6FYw==",
+      "type": "package",
+      "path": "mqttnet/4.0.0-preview5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net452/MQTTnet.dll",
+        "lib/net461/MQTTnet.dll",
+        "lib/net5.0/MQTTnet.dll",
+        "lib/net6.0/MQTTnet.dll",
+        "lib/netcoreapp3.1/MQTTnet.dll",
+        "lib/netstandard1.3/MQTTnet.dll",
+        "lib/netstandard2.0/MQTTnet.dll",
+        "lib/netstandard2.1/MQTTnet.dll",
+        "lib/uap10.0.10240/MQTTnet.dll",
+        "lib/uap10.0.10240/MQTTnet.pri",
+        "mqttnet.4.0.0-preview5.nupkg.sha512",
+        "mqttnet.nuspec",
+        "nuget.png"
+      ]
+    },
+    "Spectre.Console/0.44.1-preview.0.13": {
+      "sha512": "b3ZhVHSN+8sBvM6jGw9Gt3W0WDzA9ZTyW+UrCKf6P/SYCZBvHyDLhOe27ea2UX7Rn/VZjFWQsFkOwR09b7HMrg==",
+      "type": "package",
+      "path": "spectre.console/0.44.1-preview.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Spectre.Console.dll",
+        "lib/net5.0/Spectre.Console.xml",
+        "lib/net6.0/Spectre.Console.dll",
+        "lib/net6.0/Spectre.Console.xml",
+        "lib/netstandard2.0/Spectre.Console.dll",
+        "lib/netstandard2.0/Spectre.Console.xml",
+        "small-logo.png",
+        "spectre.console.0.44.1-preview.0.13.nupkg.sha512",
+        "spectre.console.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "MQTTnet >= 4.0.0-preview5",
+      "Spectre.Console >= 0.44.1-preview.0.13"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\MQTT_Subscriber\\MQTT_Subscriber.csproj",
+      "projectName": "MQTT_Subscriber",
+      "projectPath": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\MQTT_Subscriber\\MQTT_Subscriber.csproj",
+      "packagesPath": "C:\\Users\\ryanyoung\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\MQTT_Subscriber\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ryanyoung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "MQTTnet": {
+            "target": "Package",
+            "version": "[4.0.0-preview5, )"
+          },
+          "Spectre.Console": {
+            "target": "Package",
+            "version": "[0.44.1-preview.0.13, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

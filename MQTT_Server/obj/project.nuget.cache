@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "z65x3Vo0MOcL9CSUjqV1Y3Nqpq2/dVdlumEKIGNrpIu5gT+Tu9/8w/JBulpswAWbrrbL1HxsSoim6Wg8nHxiKg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\MQTT_Server\\MQTT_Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\mqttnet\\4.0.0-preview5\\mqttnet.4.0.0-preview5.nupkg.sha512"
+  ],
+  "logs": []
+}

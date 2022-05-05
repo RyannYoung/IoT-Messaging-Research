@@ -1,0 +1,17 @@
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.csproj.AssemblyReference.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.AssemblyInfoInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.AssemblyInfo.cs
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.csproj.CoreCompileInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\bin\Debug\net6.0\AMQP_Client.exe
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\bin\Debug\net6.0\AMQP_Client.deps.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\bin\Debug\net6.0\AMQP_Client.runtimeconfig.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\bin\Debug\net6.0\AMQP_Client.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\bin\Debug\net6.0\AMQP_Client.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\bin\Debug\net6.0\Amqp.Net.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.csproj.CopyComplete
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\refint\AMQP_Client.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\AMQP_Client.genruntimeconfig.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Client\obj\Debug\net6.0\ref\AMQP_Client.dll

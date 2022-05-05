@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "D7DNTXiXs5hFZiZaamm7xad5+Ne5l3c3IrVuXZkFieHSFn5NsCbcHaSETW5GWrWikQ4WJgBW3EbQ78l6Ho4+2A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\AMQP_Receiver\\AMQP_Receiver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\amqpnetlite\\2.4.4\\amqpnetlite.2.4.4.nupkg.sha512",
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\amqpnetlite.core\\2.4.4\\amqpnetlite.core.2.4.4.nupkg.sha512",
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\spectre.console\\0.44.1-preview.0.13\\spectre.console.0.44.1-preview.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

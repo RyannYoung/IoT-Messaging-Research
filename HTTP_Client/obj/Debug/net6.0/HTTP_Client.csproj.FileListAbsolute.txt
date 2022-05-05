@@ -1,0 +1,17 @@
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\bin\Debug\net6.0\HTTP_Client.exe
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\bin\Debug\net6.0\HTTP_Client.deps.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\bin\Debug\net6.0\HTTP_Client.runtimeconfig.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\bin\Debug\net6.0\HTTP_Client.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\bin\Debug\net6.0\HTTP_Client.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.csproj.AssemblyReference.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.AssemblyInfoInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.AssemblyInfo.cs
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.csproj.CoreCompileInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\refint\HTTP_Client.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.genruntimeconfig.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\ref\HTTP_Client.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\bin\Debug\net6.0\Spectre.Console.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\HTTP_Client\obj\Debug\net6.0\HTTP_Client.csproj.CopyComplete

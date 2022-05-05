@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "AUfmt5Ue4ph99J7TY2Pf1CuClU0Kem1aSbS8lo+xwNF/ENgugC4UuLUquLF+yN4+Lybjm5a+PmyYhum1+DWx7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\CoAP_Client\\CoAP_Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\coap\\1.1.0\\coap.1.1.0.nupkg.sha512",
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\spectre.console\\0.44.1-preview.0.13\\spectre.console.0.44.1-preview.0.13.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CoAP 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CoAP",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

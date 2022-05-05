@@ -1,0 +1,17 @@
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\bin\Debug\net6.0\MQTT_Server.exe
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\bin\Debug\net6.0\MQTT_Server.deps.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\bin\Debug\net6.0\MQTT_Server.runtimeconfig.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\bin\Debug\net6.0\MQTT_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\bin\Debug\net6.0\MQTT_Server.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\bin\Debug\net6.0\MQTTnet.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.csproj.AssemblyReference.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.AssemblyInfoInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.AssemblyInfo.cs
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.csproj.CoreCompileInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.csproj.CopyComplete
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\refint\MQTT_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\MQTT_Server.genruntimeconfig.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Server\obj\Debug\net6.0\ref\MQTT_Server.dll

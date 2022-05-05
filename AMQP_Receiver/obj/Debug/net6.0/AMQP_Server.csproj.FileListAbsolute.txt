@@ -1,0 +1,17 @@
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\bin\Debug\net6.0\AMQP_Server.exe
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\bin\Debug\net6.0\AMQP_Server.deps.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\bin\Debug\net6.0\AMQP_Server.runtimeconfig.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\bin\Debug\net6.0\AMQP_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\bin\Debug\net6.0\AMQP_Server.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\bin\Debug\net6.0\Amqp.Net.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.csproj.AssemblyReference.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.AssemblyInfoInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.AssemblyInfo.cs
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.csproj.CoreCompileInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.csproj.CopyComplete
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\refint\AMQP_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\AMQP_Server.genruntimeconfig.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\AMQP_Server\obj\Debug\net6.0\ref\AMQP_Server.dll

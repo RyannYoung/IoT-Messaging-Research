@@ -1,0 +1,17 @@
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\bin\Debug\net6.0\Coap_Communication.exe
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\bin\Debug\net6.0\Coap_Communication.deps.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\bin\Debug\net6.0\Coap_Communication.runtimeconfig.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\bin\Debug\net6.0\Coap_Communication.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\bin\Debug\net6.0\Coap_Communication.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\bin\Debug\net6.0\CoAP.NET.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.csproj.AssemblyReference.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.AssemblyInfoInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.AssemblyInfo.cs
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.csproj.CoreCompileInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.csproj.CopyComplete
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\refint\Coap_Communication.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\Coap_Communication.genruntimeconfig.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\Coap_Communication\obj\Debug\net6.0\ref\Coap_Communication.dll

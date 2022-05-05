@@ -1,0 +1,17 @@
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\bin\Debug\net6.0\CoAP_Server.exe
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\bin\Debug\net6.0\CoAP_Server.deps.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\bin\Debug\net6.0\CoAP_Server.runtimeconfig.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\bin\Debug\net6.0\CoAP_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\bin\Debug\net6.0\CoAP_Server.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\bin\Debug\net6.0\CoAP.NET.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.csproj.AssemblyReference.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.AssemblyInfoInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.AssemblyInfo.cs
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.csproj.CoreCompileInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.csproj.CopyComplete
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\refint\CoAP_Server.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\CoAP_Server.genruntimeconfig.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Server\obj\Debug\net6.0\ref\CoAP_Server.dll

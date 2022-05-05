@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6oApVgTI7HS7RKqY5yu0H2vKxq6evhIUSBB3ZyPc2l2xMmnA5elKI1ZBdxh90M5KZOhjtAIMqwjwIKAeYqVxDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\HTTP_Client\\HTTP_Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\spectre.console\\0.44.1-preview.0.13\\spectre.console.0.44.1-preview.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
