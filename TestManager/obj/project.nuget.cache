@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "Lo/y8W2Lf6RmqnZdo3M2kPlY5FeUOLnWMHsjIyX3kMJDRUEm5BiswkEgfw18kHpgN3SPpACzHR/VyJ3QaLeLyA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ryanyoung\\RiderProjects\\Coap_Communication\\TestManager\\TestManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\amqpnetlite\\2.4.4\\amqpnetlite.2.4.4.nupkg.sha512",
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\amqpnetlite.core\\2.4.4\\amqpnetlite.core.2.4.4.nupkg.sha512",
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\coap\\1.1.0\\coap.1.1.0.nupkg.sha512",
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\mqttnet\\4.0.0-preview5\\mqttnet.4.0.0-preview5.nupkg.sha512",
+    "C:\\Users\\ryanyoung\\.nuget\\packages\\spectre.console\\0.44.1-preview.0.13\\spectre.console.0.44.1-preview.0.13.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CoAP 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CoAP",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

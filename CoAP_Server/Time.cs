@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Http.Headers;
+using System.Text.Json;
 using System.Threading;
 using CoAP.Server.Resources;
 
@@ -15,7 +17,7 @@ namespace CoAP
             Attributes.AddResourceType("CurrentTime");
             Observable = true;
 
-            _timer = new Timer(Timed, null, 0, 2000);
+            _timer = new Timer(Timed, null, 0, 0);
         }
 
         private void Timed(Object o)
@@ -26,7 +28,15 @@ namespace CoAP
 
         protected override void DoGet(CoapExchange exchange)
         {
-            exchange.Respond(StatusCode.Content, _now.ToString(), MediaType.TextPlain);
+            Dictionary<string, string> responseData = new Dictionary<string, string>();
+            responseData.Add("data", DateTime.Now.ToString("o"));
+            responseData.Add("type", "response");
+            responseData.Add("target-user", "sample-user");
+
+            var json = JsonSerializer.Serialize(responseData);
+
+            Console.WriteLine(exchange.Request);
+            exchange.Respond(StatusCode.Content, json, MediaType.ApplicationJson);
         }
     }
 }

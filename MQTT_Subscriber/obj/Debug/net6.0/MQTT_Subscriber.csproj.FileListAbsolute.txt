@@ -15,3 +15,4 @@ C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Subscriber\obj\Debug\ne
 C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Subscriber\obj\Debug\net6.0\MQTT_Subscriber.pdb
 C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Subscriber\obj\Debug\net6.0\MQTT_Subscriber.genruntimeconfig.cache
 C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Subscriber\obj\Debug\net6.0\ref\MQTT_Subscriber.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\MQTT_Subscriber\bin\Debug\net6.0\Spectre.Console.dll

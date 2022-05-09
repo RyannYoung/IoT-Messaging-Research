@@ -1,0 +1,17 @@
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\bin\Debug\net6.0\TestManager.exe
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\bin\Debug\net6.0\TestManager.deps.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\bin\Debug\net6.0\TestManager.runtimeconfig.json
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\bin\Debug\net6.0\TestManager.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\bin\Debug\net6.0\TestManager.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.csproj.AssemblyReference.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.AssemblyInfoInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.AssemblyInfo.cs
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.csproj.CoreCompileInputs.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\refint\TestManager.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.pdb
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.genruntimeconfig.cache
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\ref\TestManager.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\bin\Debug\net6.0\Spectre.Console.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\TestManager\obj\Debug\net6.0\TestManager.csproj.CopyComplete

@@ -12,7 +12,6 @@ mqttClient.ApplicationMessageReceivedAsync += e =>
 {
     Console.WriteLine("Received application message.");
     Console.WriteLine(e.ApplicationMessage.ConvertPayloadToString());
-
     return Task.CompletedTask;
 };
 

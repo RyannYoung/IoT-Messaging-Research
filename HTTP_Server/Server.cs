@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 
 namespace HTTP_Server;
 
@@ -59,10 +60,9 @@ public class Server
                 {
                     var response = ProcessRequest(request);
                     var responseBuilder = new StringBuilder();
-                    responseBuilder.AppendLine("HTTP/1.1 200 OK");
-                    responseBuilder.AppendLine("Content-Type: application/json");
-                    responseBuilder.AppendLine($"Content-Length: {response.Data.Length}");
-                    responseBuilder.AppendLine();
+                    responseBuilder.AppendLine("HTTP/1.1 200 OK" +
+                                               "\nContent-Type: application/json" +
+                                               "\nContent-Length: {response.Data.Length}\n");
 
                     var headerBytes = Encoding.UTF8.GetBytes(responseBuilder.ToString());
                 
@@ -84,7 +84,15 @@ public class Server
     {
         Console.Out.WriteLine($"Request: {request}");
         var response = new Response { MimeType = "application/json" };
-        var responseData = Encoding.UTF8.GetBytes(request);
+
+        var responsePayload = new Dictionary<string, string>();
+        responsePayload.Add("data", DateTime.Now.ToString("o"));
+        responsePayload.Add("type", "response");
+        responsePayload.Add("target-user", "sample-user");
+        
+        var json = JsonSerializer.Serialize(responsePayload);
+        
+        var responseData = Encoding.UTF8.GetBytes(json);
         response.Data = responseData;
         return response;
     }

@@ -15,3 +15,4 @@ C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Client\obj\Debug\net6.0
 C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Client\obj\Debug\net6.0\CoAP_Client.pdb
 C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Client\obj\Debug\net6.0\CoAP_Client.genruntimeconfig.cache
 C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Client\obj\Debug\net6.0\ref\CoAP_Client.dll
+C:\Users\ryanyoung\RiderProjects\Coap_Communication\CoAP_Client\bin\Debug\net6.0\Spectre.Console.dll

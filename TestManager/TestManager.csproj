@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Spectre.Console" Version="0.44.1-preview.0.13" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AMQP_Receiver\AMQP_Receiver.csproj" />
+      <ProjectReference Include="..\AMQP_Sender\AMQP_Sender.csproj" />
+      <ProjectReference Include="..\CoAP_Client\CoAP_Client.csproj" />
+      <ProjectReference Include="..\CoAP_Server\CoAP_Server.csproj" />
+      <ProjectReference Include="..\HTTP_Client\HTTP_Client.csproj" />
+      <ProjectReference Include="..\HTTP_Server\HTTP_Server.csproj" />
+      <ProjectReference Include="..\MQTT_Publisher\MQTT_Publisher.csproj" />
+      <ProjectReference Include="..\MQTT_Subscriber\MQTT_Subscriber.csproj" />
+    </ItemGroup>
+
+</Project>
