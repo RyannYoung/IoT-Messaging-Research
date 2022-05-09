@@ -13,13 +13,14 @@ var packets = new List<PacketData>();
 var count = 0;
 
 // Mock data values
-var values = new Dictionary<string, string>();
-values.Add("value", DateTime.UnixEpoch.ToString());
-values.Add("mockAPIKey", "thisisamockapikey1234567890!@#$%^&*()");
-values.Add("user", "iot_basic_user");
-values.Add("publish", "date\\unixepoch\\");
+var mockData = new Dictionary<string, string>();
+mockData.Add("value", DateTime.UnixEpoch.ToString());
+mockData.Add("mockAPIKey", "thisisamockapikey1234567890!@#$%^&*()");
+mockData.Add("user", "iot_basic_user");
+mockData.Add("mac", "00:00:5e:00:53:af");
+mockData.Add("publish", "date\\unixepoch\\");
 
-var content = new FormUrlEncodedContent(values);
+var content = new FormUrlEncodedContent(mockData);
 
 var table = new Table()
     .AddColumn("id")
@@ -68,14 +69,14 @@ async Task Start(int iterations = 5)
             var startTime = DateTime.Now; // time of when the request was sent to server
             
             // Send and wait for the response
-            content = new FormUrlEncodedContent(values);
+            content = new FormUrlEncodedContent(mockData);
             //var response = await httpClient.PostAsync("http://localhost:8888/", content);
 
             var request = new HttpRequestMessage()
             {
                 Method = HttpMethod.Get,
                 RequestUri = new Uri("http://localhost:8888/"),
-                Content = new StringContent(JsonSerializer.Serialize(values), Encoding.UTF8,
+                Content = new StringContent(JsonSerializer.Serialize(mockData), Encoding.UTF8,
                     MediaTypeNames.Application.Json)
             };
             
@@ -99,7 +100,7 @@ async Task Start(int iterations = 5)
             var sentTime = SubtracttoMS(receivedTime, startTime);
             var ackTime = SubtracttoMS(acknowledgeTime, startTime);
             var recTime = SubtracttoMS(receivedTime, acknowledgeTime);
-            var payload = JsonSerializer.Serialize(values);
+            var payload = JsonSerializer.Serialize(mockData);
 
             packets.Add(new PacketData(
                 count,

@@ -15,12 +15,13 @@ var packets = new List<PacketData>();
 var count = 0;
 
 // mock data to send
-var values = new Dictionary<string, string>();
-values.Add("value", DateTime.UnixEpoch.ToString());
-values.Add("mockAPIKey", "thisisamockapikey1234567890!@#$%^&*()");
-values.Add("user", "iot_basic_user");
-values.Add("publish", "date\\unixepoch\\");
-var payload = JsonSerializer.Serialize(values);
+var mockData = new Dictionary<string, string>();
+mockData.Add("value", DateTime.UnixEpoch.ToString());
+mockData.Add("mockAPIKey", "thisisamockapikey1234567890!@#$%^&*()");
+mockData.Add("user", "iot_basic_user");
+mockData.Add("mac", "00:00:5e:00:53:af");
+mockData.Add("publish", "date\\unixepoch\\");
+var payload = JsonSerializer.Serialize(mockData);
 
 
 LogManager.Level = LogLevel.None;

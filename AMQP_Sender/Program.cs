@@ -18,6 +18,7 @@ var mockData = new Dictionary<string, string>();
 mockData.Add("value", DateTime.UnixEpoch.ToString());
 mockData.Add("mockAPIKey", "thisisamockapikey1234567890!@#$%^&*()");
 mockData.Add("user", "iot_basic_user");
+mockData.Add("mac", "00:00:5e:00:53:af");
 mockData.Add("publish", "date\\unixepoch\\");
 var payload = JsonSerializer.Serialize(mockData);
 
@@ -132,7 +133,7 @@ async Task ReceiveMessage()
     receiver.Accept(receivedMessage);
 }
 
-void SaveToFile(string path = @"C:\temp\iot_coap_response.json")
+void SaveToFile(string path = @"C:\temp\iot_ampq_response.json")
 {
     var json = JsonSerializer.Serialize(packets);
     File.WriteAllText(path, json);
