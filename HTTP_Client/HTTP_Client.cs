@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
+using System.Net.Mime;
 using System.Runtime.CompilerServices;
+using System.Text;
 using System.Text.Json;
 using HTTP_Client;
 using Spectre.Console;
@@ -67,15 +69,27 @@ async Task Start(int iterations = 5)
             
             // Send and wait for the response
             content = new FormUrlEncodedContent(values);
-            var response = await httpClient.PostAsync("http://localhost:8888/", content);
+            //var response = await httpClient.PostAsync("http://localhost:8888/", content);
+
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri("http://localhost:8888/"),
+                Content = new StringContent(JsonSerializer.Serialize(values), Encoding.UTF8,
+                    MediaTypeNames.Application.Json)
+            };
+            
+            
+
+            var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+            response.EnsureSuccessStatusCode();
+
             var receivedTime = DateTime.Now; // time of when the response was received to client
             var responseString = await response.Content.ReadAsStringAsync();
             var responsejson = JsonSerializer.Deserialize<Dictionary<string, string>>(responseString);
             
-
             var acknowledgeTime= DateTime.Parse(responsejson["data"]);
 
-            
             // Formulate packet data information
             var time = DateTime.Now.ToString("H:mm:ss.fff");
             var sentPduByteArray = await content.ReadAsByteArrayAsync();
