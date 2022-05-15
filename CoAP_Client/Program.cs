@@ -16,6 +16,7 @@ var count = 0;
 
 // mock data to send
 var mockData = new Dictionary<string, string>();
+mockData.Add("d", "x");
 mockData.Add("value", DateTime.UnixEpoch.ToString());
 mockData.Add("mockAPIKey", "thisisamockapikey1234567890!@#$%^&*()");
 mockData.Add("user", "iot_basic_user");
@@ -54,7 +55,7 @@ void Init()
     
     iterations = AnsiConsole.Prompt(new TextPrompt<int>(@"[red][[Required]][/] How many requests? ")
         .AllowEmpty());
-    fileOutput = AnsiConsole.Prompt(new TextPrompt<string>(@"[grey][[Optional]][/] What is the full [green]filepath output[/] (def: C:\temp\iot_http_response.json)? ")
+    fileOutput = AnsiConsole.Prompt(new TextPrompt<string>(@"[grey][[Optional]][/] What is the full [green]filepath output[/] (def: C:\temp\iot_coap_response.json)? ")
         .AllowEmpty());
 }
 
@@ -81,7 +82,7 @@ async Task Start(int iterations = 5)
 
             // Create, configure and send a request to the server
             var request = new Request(Method.GET) {URI = new Uri("coap://localhost/time")};
-            request.SetPayload(payload, MediaType.Any);
+            request.SetPayload(payload, MediaType.Any); 
             request.Send();
 
             var response = request.WaitForResponse(); // response contains the datetime
@@ -89,13 +90,12 @@ async Task Start(int iterations = 5)
 
             var responsejson = JsonSerializer.Deserialize<Dictionary<string, string>>(response.ResponseText);
             var acknowledgeTime = DateTime.Parse(responsejson["data"]);
-            
-            
+
             // Formulate packet data information
             
             var time = DateTime.Now.ToString("H:mm:ss.fff");
             var sentPDU = request.Bytes.Length;
-            var receivedPDU = response.PayloadString.Length; //todo: fix
+            var receivedPDU = response.PayloadString.Length;
             var sentTime = SubtracttoMS(receivedTime, startTime);
             var ackTime = SubtracttoMS(acknowledgeTime, startTime);
             var recTime = SubtracttoMS(receivedTime, acknowledgeTime);
@@ -123,8 +123,8 @@ async Task Start(int iterations = 5)
                 sentTime.ToString(),
                 ackTime.ToString(),
                 recTime.ToString(),
-                payload);
-            
+                "omitted");
+
             ctx.Refresh();
 
             watch.Reset();

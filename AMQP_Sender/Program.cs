@@ -4,9 +4,12 @@ using Amqp;
 using AMQP_Client;
 using Spectre.Console;
 
+// Setup params
 var address = new Address("amqp://guest:guest@localhost:5672");
 var connection = await Connection.Factory.CreateAsync(address);
 var session = new Session(connection);
+
+// You'll need an AMQP broker to run this evaluation, a sample can be found on the AMQP Github page
 // TestAmqpBroker.exe amqp://localhost:5672 /creds:guest:guest /queues:q1
 
 // Recording params
@@ -63,6 +66,8 @@ void Init()
     fileOutput = AnsiConsole.Prompt(new TextPrompt<string>(@"[grey][[Optional]][/] What is the full [green]filepath output[/] (def: C:\temp\iot_http_response.json)? ")
         .AllowEmpty());
 }
+
+
 
 async Task Start()
 {

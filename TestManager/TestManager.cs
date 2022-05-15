@@ -6,6 +6,11 @@ namespace TestManager;
 
 public class TestManager
 {
+    /// <summary>
+    /// NONE OF THIS WORKS
+    /// <remarks>IT IS ALL BROKEN</remarks>
+    /// </summary>
+
     private List<PacketData> _packets = new();
     private string _savePath = "";
     private int _iterations;

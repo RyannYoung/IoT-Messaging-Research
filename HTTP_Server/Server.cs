@@ -7,13 +7,20 @@ namespace HTTP_Server;
 
 public class Server
 {
+    // Setup params
     private Thread _serverThread = null!;
     private TcpListener _listener;
 
+    // Callbacks to activate when a response is received
     public delegate Response ProcessRequestDelegate(string? request);
     public ProcessRequestDelegate ProcessRequest;
 
-    public void Start(int port = 8888)
+    
+    /// <summary>
+    /// Start the application, this sets up a server and runs the given IP
+    /// </summary>
+    /// <param name="port">The port utilised by the server</param>
+    public void Start(int port = 6912)
     {
         if (_serverThread != null) return;
         
@@ -24,6 +31,11 @@ public class Server
         _serverThread.Start();
     }
 
+    /// <summary>
+    /// Reads the given request from the network stream
+    /// </summary>
+    /// <param name="stream">The network stream obtaining the request data</param>
+    /// <returns></returns>
     private static string? ReadRequest(NetworkStream stream)
     {
         var contents = new MemoryStream();
@@ -42,6 +54,9 @@ public class Server
         return Encoding.UTF8.GetString(contents.ToArray());
     }
 
+    /// <summary>
+    /// Run-time for the server
+    /// </summary>
     private void ServerHandler(object o)
     {
         _listener.Start();
@@ -73,25 +88,33 @@ public class Server
             finally
             {
                 stream.Close();
-                client.Close();
             }
             
         }
         
     }
     
+    /// <summary>
+    /// Process the request
+    /// </summary>
+    /// <param name="request">the given request in string form</param>
+    /// <returns></returns>
     public static Response ProcessMessage(string request)
     {
+        
         Console.Out.WriteLine($"Request: {request}");
         var response = new Response { MimeType = "application/json" };
 
+        // Construct the response payload
         var responsePayload = new Dictionary<string, string>();
         responsePayload.Add("data", DateTime.Now.ToString("o"));
         responsePayload.Add("type", "response");
         responsePayload.Add("target-user", "sample-user");
         
+        // Serialise into json format
         var json = JsonSerializer.Serialize(responsePayload);
-        
+
+        // Encode and return the response object.
         var responseData = Encoding.UTF8.GetBytes(json);
         response.Data = responseData;
         return response;

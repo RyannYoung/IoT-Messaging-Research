@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CoAP_Server/1.0.0": {
+        "dependencies": {
+          "CoAP": "1.1.0",
+          "Spectre.Console": "0.44.1-preview.0.13"
+        },
+        "runtime": {
+          "CoAP_Server.dll": {}
+        }
+      },
+      "CoAP/1.1.0": {
+        "runtime": {
+          "lib/net40/CoAP.NET.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "Spectre.Console/0.44.1-preview.0.13": {
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.44.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoAP_Server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoAP/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QonWBKl3w1jOgLTPkEXNaAH2eIXHtCs1FyR2vCzE7I6fVqW2V49uTMx8pWZ/sdo1FuDv+ptqSyCbU/VKKzz/1A==",
+      "path": "coap/1.1.0",
+      "hashPath": "coap.1.1.0.nupkg.sha512"
+    },
+    "Spectre.Console/0.44.1-preview.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b3ZhVHSN+8sBvM6jGw9Gt3W0WDzA9ZTyW+UrCKf6P/SYCZBvHyDLhOe27ea2UX7Rn/VZjFWQsFkOwR09b7HMrg==",
+      "path": "spectre.console/0.44.1-preview.0.13",
+      "hashPath": "spectre.console.0.44.1-preview.0.13.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MQTT_Publisher/1.0.0": {
+        "dependencies": {
+          "MQTTnet": "4.0.0-preview5",
+          "Spectre.Console": "0.44.1-preview.0.13"
+        },
+        "runtime": {
+          "MQTT_Publisher.dll": {}
+        }
+      },
+      "MQTTnet/4.0.0-preview5": {
+        "runtime": {
+          "lib/net6.0/MQTTnet.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Spectre.Console/0.44.1-preview.0.13": {
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.44.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MQTT_Publisher/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MQTTnet/4.0.0-preview5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dWWjKDsjREzBei3eKlr23kvPNFDCRs1ejZDiLmYaDEqZCtxQyE8+cjZ8LO8Qjjv/YGyvepLTxBdmscvuBU6FYw==",
+      "path": "mqttnet/4.0.0-preview5",
+      "hashPath": "mqttnet.4.0.0-preview5.nupkg.sha512"
+    },
+    "Spectre.Console/0.44.1-preview.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b3ZhVHSN+8sBvM6jGw9Gt3W0WDzA9ZTyW+UrCKf6P/SYCZBvHyDLhOe27ea2UX7Rn/VZjFWQsFkOwR09b7HMrg==",
+      "path": "spectre.console/0.44.1-preview.0.13",
+      "hashPath": "spectre.console.0.44.1-preview.0.13.nupkg.sha512"
+    }
+  }
+}

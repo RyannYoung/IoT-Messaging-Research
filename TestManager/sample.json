@@ -1,0 +1,28 @@
+﻿[{
+  "id": 0,
+  "time": "23:16:49.547",
+  "sentPDUSize": 187,
+  "receivedPDUSize": 95,
+  "sentTimeMS": 81.9928,
+  "ackTimeMS": 49.7442,
+  "recTimeMS": 32.2486
+},
+{
+"id": 1,
+"time": "23:16:49.569",
+"sentPDUSize": 187,
+"receivedPDUSize": 95,
+"sentTimeMS": 1.0736,
+"ackTimeMS": 0.6402,
+"recTimeMS": 0.4334
+},
+{
+"id": 2,
+"time": "23:16:49.570",
+"sentPDUSize": 187,
+"receivedPDUSize": 95,
+"sentTimeMS": 0.5033,
+"ackTimeMS": 0.3047,
+"recTimeMS": 0.1986
+}]
+

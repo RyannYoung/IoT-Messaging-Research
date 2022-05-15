@@ -1,12 +1,8 @@
-﻿using System.Net.Sockets;
-using System.Text;
-using System.Text.Json;
+﻿using System.Text.Json;
 using MQTT_Subscriber;
 using MQTTnet;
 using MQTTnet.Client;
-using MQTTnet.Protocol;
 using Spectre.Console;
-
 
 // RUN THE APPLICATION THROUGH MOSQUITTO
 
@@ -48,7 +44,6 @@ bool canSendMessage = true;
 DateTime startTime = default;
 DateTime receivedTime;
 
-
 //MQTT Setup
 var mqttFactory = new MqttFactory();
 MqttApplicationMessage applicationMessage = null;
@@ -59,15 +54,17 @@ mqttClient.ConnectedAsync += e =>
     return Task.CompletedTask;
 };
 
+// Event which is called when the client disconnects from the broker
 mqttClient.DisconnectedAsync += e =>
 {
     Console.WriteLine("Disconnected");
     return Task.CompletedTask;
 };
 
+// Event which is called when the client receives a message from the broker (must be subscribed to a topic).
 mqttClient.ApplicationMessageReceivedAsync += e =>
 {
-    
+    // Stamp the receive time
     receivedTime = DateTime.Now;
     
     // formulate packet data information
@@ -76,6 +73,7 @@ mqttClient.ApplicationMessageReceivedAsync += e =>
     var receivedPDU = e.ApplicationMessage.Payload.Length;
     var sentTime = SubtracttoMS(receivedTime, startTime);
     
+    // Add a packet to the buffer
     packets.Add(new PacketData(
         count,
         time,
@@ -86,17 +84,20 @@ mqttClient.ApplicationMessageReceivedAsync += e =>
         ackTimeMs: -1,
         recTimeMs: -1
     ));
-
-    canSendMessage = true;
+    
+    canSendMessage = true; // this was working, then it wasn't, then it was, but now it isn't :(
 
     return Task.CompletedTask;
 };
 
+// Run process for the application
+// Probably shouldn't be down this far
+Init(); // setup
+await Start(iterations); // run
+SaveToFile(); // save
 
-Init();
-await Start(iterations);
-SaveToFile();
 
+// Initialisation configuration
 void Init()
 {
     Console.Clear();
@@ -113,11 +114,12 @@ void Init()
 
 async Task Start(int iterations = 5)
 {
+    // Wrapped in this for neat table console output
     await AnsiConsole.Live(table).StartAsync(async ctx =>
     {
         // connect
         var mqttClientOptions = new MqttClientOptionsBuilder()
-            .WithTcpServer("localhost", 1883)
+            .WithTcpServer("localhost", 1880)
             .WithClientId("IOT_DATA_TEST")
             .WithCleanSession()
             .Build();
@@ -172,7 +174,7 @@ async Task PublishMessage()
 {
     applicationMessage = new MqttApplicationMessageBuilder()
         .WithTopic("IOT/data")
-        .WithPayload("100500700")
+        .WithPayload(payload)
         .Build();
     
         await mqttClient.PublishAsync(applicationMessage, CancellationToken.None);

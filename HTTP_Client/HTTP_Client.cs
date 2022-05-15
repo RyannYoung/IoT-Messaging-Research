@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Net;
 using System.Net.Mime;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -8,17 +9,22 @@ using Spectre.Console;
 
 // Recording values
 var httpClient = new HttpClient();
+httpClient.DefaultRequestHeaders.Add("Connection", "keep-alive");
+httpClient.DefaultRequestHeaders.ConnectionClose = false;
+httpClient.DefaultRequestHeaders.Add("Keep-Alive", "600");
 var watch = new Stopwatch();
 var packets = new List<PacketData>();
 var count = 0;
 
 // Mock data values
 var mockData = new Dictionary<string, string>();
+mockData.Add("d", "x");
 mockData.Add("value", DateTime.UnixEpoch.ToString());
 mockData.Add("mockAPIKey", "thisisamockapikey1234567890!@#$%^&*()");
 mockData.Add("user", "iot_basic_user");
 mockData.Add("mac", "00:00:5e:00:53:af");
 mockData.Add("publish", "date\\unixepoch\\");
+
 
 var content = new FormUrlEncodedContent(mockData);
 
@@ -70,19 +76,24 @@ async Task Start(int iterations = 5)
             
             // Send and wait for the response
             content = new FormUrlEncodedContent(mockData);
-            //var response = await httpClient.PostAsync("http://localhost:8888/", content);
+            //var response = await httpClient.PostAsync("http://192.168.0.248:8888/", content);
 
             var request = new HttpRequestMessage()
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri("http://localhost:8888/"),
+                RequestUri = new Uri("http://localhost:6912/"),
                 Content = new StringContent(JsonSerializer.Serialize(mockData), Encoding.UTF8,
-                    MediaTypeNames.Application.Json)
+                    MediaTypeNames.Application.Json),
+                Headers = { Connection = { "keep-alive"} }
             };
+
+            Console.WriteLine("Header: "+request.Headers.Connection);
             
+            
+            var response = await httpClient.SendAsync(request).ConfigureAwait(false);
             
 
-            var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+
             response.EnsureSuccessStatusCode();
 
             var receivedTime = DateTime.Now; // time of when the response was received to client
@@ -102,6 +113,8 @@ async Task Start(int iterations = 5)
             var recTime = SubtracttoMS(receivedTime, acknowledgeTime);
             var payload = JsonSerializer.Serialize(mockData);
 
+            Console.WriteLine($"Time sent: {startTime.ToString("H:mm:ss.fff")}, Time ack: {acknowledgeTime.ToString()}");
+            
             packets.Add(new PacketData(
                 count,
                 time, 
@@ -124,7 +137,7 @@ async Task Start(int iterations = 5)
                 recTime.ToString(),
                 payload);
             ctx.Refresh();
-        
+
             // Reset
             watch.Reset();
             count++;
